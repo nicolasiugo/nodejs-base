@@ -1,5 +1,6 @@
 var http = require("http"),
-    server;
+    server,
+app = require("express");
 
 server = http.createServer(function (req, res) {
     res.writeHead(200, {"Content-Type": "text/plain"});
