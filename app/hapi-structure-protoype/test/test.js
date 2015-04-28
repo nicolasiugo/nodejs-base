@@ -12,9 +12,13 @@ describe('Probando', function() {
 
 	describe('#otraPrueba()', function() {
 		it('should return 5 if parameter passed is grater than 5', function() {
+			probando.otraPrueba(6).should.be.exactly(5);
+		});
+
+		if ('should return the parameter passed if it is less than 5', function() {
+			
 			probando.otraPrueba(4).should.be.exactly(4);
 			probando.otraPrueba(5).should.be.exactly(5);
-			probando.otraPrueba(6).should.be.exactly(5);
 		});
 	});
 });
